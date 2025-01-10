@@ -20,6 +20,10 @@ h3 {
     font-family: "Poppins", serif;
 }
 
+a {
+    cursor: pointer;
+}
+
 .container {
     width: 90%;
     max-width: 1270px;
@@ -58,6 +62,11 @@ header a {
     color: var(--color-dark);
 }
 
+header a:hover {
+    color: var(--color-gray);
+}
+
+
 header section.hero {
     padding-top: 71px;
     display: flex;
@@ -94,6 +103,10 @@ header section.hero a {
     justify-content: center;
     width: 100%;
     max-width: 280px;
+}
+
+header section.hero a:hover {
+    background-color: var(--color-pink-light);
 }
 
 header section.hero img {
@@ -181,6 +194,10 @@ header section.hero img {
     margin-inline: auto;
 }
 
+.cta a:hover {
+    background-color: var(--color-pink-light);
+}
+
 footer {
     background-color: var(--color-dark);
     padding-top: 144px;
@@ -228,6 +245,10 @@ footer li {
     margin-bottom: 12px;
 }
 
+.footer .nav li a:hover {
+    text-decoration: underline;
+}
+
 .footer_socials {
     display: flex;
     flex-direction: column;
@@ -247,4 +268,9 @@ footer li {
     padding: 7px;
     width: 32px;
     height: 31px;
+}
+
+
+.footer_socials a svg:hover {
+    color: var(--color-pink);
 }
