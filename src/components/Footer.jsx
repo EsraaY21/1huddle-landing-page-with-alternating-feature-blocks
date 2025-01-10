@@ -2,38 +2,28 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-customDark pt-36 pb-16">
+    <footer className="footer">
       <div className="container">
-        import Logo from "./svg/Logo";
-        <div className="text-white flex lg:flex-row flex-col justify-between mt-8 text-[0.875rem] leading-[1.5rem]">
-          <ul className="space-y-4 lg:w-[30%]">
-            <li className="mb-4 flex gap-4">
-              <img
-                src={`/images/icon-location.svg`}
-                className="w-6 h-6 object-contain"
-              />
+        <div className="footer-content">
+          <ul className="footer-location">
+            <li>
+              <img src={`assets/images/icon-location.svg`} alt="Location" />
               <a>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
               </a>
             </li>
-            <li className="mb-4 flex gap-4">
-              <img
-                src={`/images/icon-phone.svg`}
-                className="w-6 h-6 object-contain"
-              />
+            <li>
+              <img src={`assets/images/icon-phone.svg`} alt="Phone" />
               <a>+1-543-123-4567</a>
             </li>
-            <li className="flex gap-4">
-              <img
-                src={`/images/icon-email.svg`}
-                className="w-6 h-6 object-contain"
-              />
+            <li>
+              <img src={`assets/images/icon-email.svg`} alt="Email" />
               <a>example@huddle.com</a>
             </li>
           </ul>
 
-          <ul className="space-y-3">
+          <ul className="footer-links">
             <li>
               <a href="">About Us</a>
             </li>
@@ -45,7 +35,7 @@ export default function Footer() {
             </li>
           </ul>
 
-          <ul className="space-y-3">
+          <ul className="footer-links">
             <li>
               <a href="">Career</a>
             </li>
@@ -57,8 +47,8 @@ export default function Footer() {
             </li>
           </ul>
 
-          <ul className="flex flex-col justify-between">
-            <li className="flex gap-3 socials">
+          <ul className="footer-socials">
+            <li>
               <a href="">
                 <FaFacebookF />
               </a>

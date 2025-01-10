@@ -10,8 +10,8 @@ function App() {
       <main>
         <div className="container">
           <FeatureList />
-          <CallToAction />
         </div>
+        <CallToAction />
       </main>
       <Footer />
     </>
