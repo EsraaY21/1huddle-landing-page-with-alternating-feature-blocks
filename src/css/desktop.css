@@ -9,8 +9,7 @@
     --box-shadow-container: 0px 0px 14px rgba(0, 0, 0, 0.07);
 }
 
-body,
-* {
+body {
     font-family: "Open Sans", serif;
     color: var(--color-dark);
 }
@@ -67,6 +66,7 @@ header section.hero {
 }
 
 header section.hero>div {
+    width: 41%;
     max-width: 536px;
 }
 
@@ -103,7 +103,7 @@ header section.hero img {
 
 .features {
     padding-top: 160px;
-    padding-bottom: 160px;
+    padding-bottom: 60px;
 }
 
 .features .feature_item {
@@ -183,4 +183,68 @@ header section.hero img {
 
 footer {
     background-color: var(--color-dark);
+    padding-top: 144px;
+    padding-bottom: 64px;
+    color: white;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a,
+footer li {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+.footer .logo {
+    margin-bottom: 32px
+}
+
+.footer_contacts {
+    width: 31%;
+}
+
+.footer_contacts li {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_contacts li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.footer_contacts li img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+}
+
+.footer .nav li a {
+    margin-bottom: 12px;
+}
+
+.footer_socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.footer_socials li {
+    display: flex;
+    gap: 12px;
+}
+
+
+.footer_socials a svg {
+    border-radius: 100%;
+    border: 1px solid currentColor;
+    padding: 7px;
+    width: 32px;
+    height: 31px;
 }
