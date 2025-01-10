@@ -25,14 +25,13 @@ export default function FeatureList() {
   ];
 
   return (
-    <div className="space-y-10 pt-40 pb-20">
+    <div className="features">
       {features.map((feature, index) => (
         <FeatureSection
           title={feature.title}
           key={index}
           desc={feature.paragraph}
           sectionImage={feature.sectionImage}
-          index={index}
         />
       ))}
     </div>

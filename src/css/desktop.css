@@ -45,7 +45,7 @@ header img {
 }
 
 header a {
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.09);
     border-radius: 24px;
     background-color: white;
     height: 48px;
@@ -98,4 +98,51 @@ header section.hero a {
 header section.hero img {
     width: 50%;
     height: auto;
+}
+
+.features {
+    padding-top: 160px;
+    padding-bottom: 344px;
+}
+
+.features .feature_item {
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 53px 32px 53px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.features .feature_item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.features .feature_item>div {
+    max-width: 488px;
+}
+
+.features .feature_item h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 16px;
+}
+
+
+.features .feature_item p {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-gray);
+}
+
+.features .feature_item img {
+    width: 50%;
+    max-width: 406px;
+}
+
+.features .feature_item:nth-child(even) {
+    flex-direction: row-reverse;
 }
