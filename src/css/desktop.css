@@ -11,6 +11,7 @@
 body,
 * {
     font-family: "Open Sans", serif;
+    color: var(--color-dark);
 }
 
 h1,
@@ -28,6 +29,8 @@ h3 {
 header {
     padding-top: 68px;
     padding-bottom: 72px;
+    background: url('assets/images/bg-hero-desktop.svg');
+    background-color: var(--color-blue-light);
 }
 
 header nav {
@@ -39,4 +42,60 @@ header nav {
 header img {
     height: 31px;
     width: auto;
+}
+
+header a {
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+    border-radius: 24px;
+    background-color: white;
+    height: 48px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--color-dark);
+}
+
+header section.hero {
+    padding-top: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section.hero>div {
+    max-width: 536px;
+}
+
+header section.hero h1 {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+header section.hero p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+header section.hero a {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--color-pink);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+header section.hero img {
+    width: 50%;
+    height: auto;
 }
