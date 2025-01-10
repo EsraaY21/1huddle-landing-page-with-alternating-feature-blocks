@@ -33,7 +33,7 @@ a {
 header {
     padding-top: 68px;
     padding-bottom: 72px;
-    background: url('assets/images/bg-hero-desktop.svg');
+    background: url('/assets/images/bg-hero-desktop.svg');
     background-color: var(--color-blue-light);
 }
 
